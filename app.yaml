@@ -1,0 +1,17 @@
+# application: ipv6-collision-probability
+# version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+# [START handlers]
+handlers:
+- url: /.*
+  script: probability.application
+# [END handlers]
+
+# [START libraries]
+libraries:
+- name: webapp2
+  version: latest
+# [END libraries]
